@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Informática Básica Ambiental - EcoTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/TecBasic.css">
+</head>
+<body class="light-theme theme-tec">
+    <header>
+        <div class="container flex-header">
+            <div class="logo">
+                <h1>Eco<span>Tech</span></h1>
+            </div>
+            <nav class="nav-excel">
+                <a href="../homePage.html" class="back-link">← Voltar para a Home</a>
+                <div id="auth-nav"></div>
+                <button id="theme-toggle" class="theme-btn"><img src="../assets/img/icons8-modo-escuro-50.png" alt="Alternar Tema" id="theme-icon"></button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="course-intro-banner">
+        <div class="container">
+            <h2>Informática Básica</h2>
+            <p>Módulo 1: Hardware, Upgrades e Redução de Lixo Eletrônico</p>
+        </div>
+    </section>
+
+    <main class="course-container">
+        <div class="main-content">
+            <section class="video-section">
+                <div class="video-player">
+                    <video id="course-video" controls>
+                        <source id="video-source" src="../assets/videos/aula 01 tec basica.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-details glass">
+                    <h2 id="video-title">Aula 01 - Hardware Básico</h2>
+                    <p id="video-description">Conheça as peças essenciais do computador, o ciclo de vida do hardware e as práticas para evitar a poluição tecnológica através da redução de lixo eletrônico (e-waste).</p>
+                    <div class="action-buttons">
+                        <a href="#" class="btn-download">📥 Material de Apoio</a>
+                        <a href="#" id="btn-atividades" class="btn-cert">🎓 Atividades</a>
+                    </div>
+                </div>
+            </section>
+
+            <div id="course-summary-block" class="comments-container glass" style="margin-top: 30px;">
+                <h3 style="font-family: 'Montserrat', sans-serif; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <img src="../assets/img/computer.avif" alt="Ícone" style="width: 28px; height: 28px; border-radius: 6px;"> O que você aprenderá nessa aula:
+                </h3>
+                <ul id="summary-list" style="list-style: none; padding-left: 0; line-height: 1.8;">
+                    <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                        <span>✔</span> <div><strong>Peças do computador:</strong> Conheça os componentes essenciais e o funcionamento básico do PC.</div>
+                    </li>
+                    <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                        <span>✔</span> <div><strong>Ciclo de vida:</strong> Como a obsolescência programada afeta o planeta.</div>
+                    </li>
+                    <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                        <span>✔</span> <div><strong>Redução de lixo eletrônico:</strong> Práticas corretas para descarte e reuso de componentes.</div>
+                    </li>
+                </ul>
+            </div>
+
+            <section id="quiz-section" class="comments-container glass" style="display: none; margin-top: 30px;">
+                <div class="quiz-header">
+                    <h3 id="quiz-title">Desafio de Conhecimento</h3>
+                    <p id="quiz-subtitle" style="color: var(--text-muted); margin-bottom: 20px;">Responda às questões para fixar o conteúdo do módulo.</p>
+                </div>
+                <form id="quiz-form"></form>
+                <div id="result-container" class="result-card" style="display: none; margin-top: 30px; padding: 25px; border-radius: 12px; text-align: center;">
+                    <h3 id="result-score" style="margin-bottom: 10px;"></h3>
+                    <p id="result-message"></p>
+                </div>
+            </section>
+            <section class="comments-container glass">
+                <h3>Dúvidas e Comentários</h3>
+                <div class="comment-input">
+                    <div class="user-thumb"></div>
+                    <div class="input-group">
+                        <textarea placeholder="Adicione um comentário ou dúvida sobre a aula..."></textarea>
+                        <button class="btn-comment">Publicar</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <aside class="playlist-sidebar glass">
+            <h3>Conteúdo do Curso</h3>
+            <div class="module">
+                <span class="module-title">Módulo 1 - Iniciante</span>
+                <ul>
+                    <li class="aula-item active" data-aula="1">
+                        <span class="status">▶</span>
+                        <div>
+                            <strong>Aula 01</strong>
+                            <p>Hardware Básico</p>
+                        </div>
+                    </li>
+                    <li class="aula-item" data-aula="2">
+                        <span class="status">▶</span>
+                        <div>
+                            <strong>Aula 02</strong>
+                            <p>Manutenção</p>
+                        </div>
+                    </li>
+                    <li class="aula-item" data-aula="3">
+                        <span class="status">▶</span>
+                        <div>
+                            <strong>Aula 03</strong>
+                            <p>Software e Energia</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Projeto de Extensão e Inovação (Engenharias Computação, Civil e Mecânica)</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

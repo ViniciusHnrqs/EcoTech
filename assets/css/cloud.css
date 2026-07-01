@@ -1,0 +1,18 @@
+@import url('excel.css');
+
+body.theme-cloud {
+    --primary: #3498db;
+    --primary-hover: #2980b9;
+}
+
+body.theme-cloud.dark-theme {
+    --primary: #5dade2;
+    --primary-hover: #3498db;
+}
+
+body.theme-cloud .course-intro-banner {
+    background: linear-gradient(135deg, #1e293b 0%, #1e3a8a 100%);
+}
+body.theme-cloud .option-item:hover {
+    background: rgba(52, 152, 219, 0.1) !important;
+}

@@ -1,0 +1,21 @@
+@import url('excel.css');
+
+
+body.theme-tec {
+    --primary: #d97706; 
+    --primary-hover: #b45309;
+}
+
+body.theme-tec.dark-theme {
+    --primary: #f59e0b; 
+    --primary-hover: #d97706;
+}
+
+body.theme-tec .course-intro-banner {
+    background: linear-gradient(135deg, #633d0b 0%, #c99050 100%);
+}
+
+body.theme-tec .option-item:hover {
+    background: rgba(230, 126, 34, 0.1) !important;
+    border-color: var(--primary) !important;
+}

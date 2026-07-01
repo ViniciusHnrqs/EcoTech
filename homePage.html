@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Tecnológica & Ambiental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body class="light-theme">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Eco<span>Tech</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li id="auth-nav"><a href="Seção Inicial/login.html" class="btn-primary" style="padding: 0.5rem 1.2rem; margin: 0 10px; font-size: 0.9rem;">Entrar</a></li>
+                    <li><button id="theme-toggle" class="theme-btn"><img src="assets/img/icons8-modo-escuro-50.png" alt="Alternar Tema" id="theme-icon"></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container grid-intro">
+            <div class="intro-text">
+                <h2>Tecnologia a serviço do Planeta</h2>
+                <p>
+                    Bem-vindo à nossa plataforma de ensino. Somos um grupo de estudantes 
+                    de engenharia que acredita que o domínio de ferramentas digitais 
+                    é um dos passos mais importantes para uma gestão ambiental eficiente. 
+                    Aprenda a transformar dados em preservação e hardware em sustentabilidade.
+                </p>
+                <div class="intro-buttons">
+                    <a href="#cursos" class="btn-primary">Explorar Cursos</a>
+                    <a href="#impacto" class="btn-secondary">Nosso Impacto</a>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img src="assets/img/hero-eco.png" alt="Tecnologia e Natureza" class="hero-img-premium">
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator-section" id="calculadora">
+        <div class="container">
+            <div class="calc-card glass">
+                <h3>Calculadora de Impacto Ambiental</h3>
+                <p>Veja quanto papel você economiza trocando processos físicos por Excel por um ano:</p>
+                <div class="calc-inputs">
+                    <label for="paper-usage">Folhas de papel usadas por dia:</label>
+                    <input type="number" id="paper-usage" placeholder="" min="0">
+                    <button class="btn-primary">Calcular Economia</button>
+                </div>
+                <div id="calc-result" class="calc-result" style="display: none;">
+                    <div class="result-item">
+                        <span class="res-val" id="res-sheets">0</span>
+                        <span class="res-label">Folhas/Ano</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="res-val" id="res-trees">0</span>
+                        <span class="res-label">Árvores Salvas*</span>
+                    </div>
+                    <p class="calc-note">*Estimativa baseada em 8,33 folhas por árvore eucalipto média.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impacto" id="impacto">
+        <div class="container">
+            <div class="section-title">
+                <h2>Como sua aprendizagem ajuda o planeta?</h2>
+                <p>O impacto prático de cada ferramenta no meio ambiente</p>
+            </div>
+            <div class="impacto-grid">
+                <div class="impacto-item glass">
+                    <div class="impacto-icon">📄🚫</div>
+                    <h4>Redução de Papel</h4>
+                    <p>Com <strong>Excel</strong>, eliminamos formulários físicos e arquivos impressos, salvando árvores e reduzindo o acúmulo de lixo nas empresas.</p>
+                </div>
+                <div class="impacto-item glass">
+                    <div class="impacto-icon">♻️🛠️</div>
+                    <h4>Combate à poluição tecnológica</h4>
+                    <p>Ao dominar o <strong>Básico</strong> da tecnologia, você evita lixos eletrônicos (e-waste) e o descarte precoce de componentes tóxicos.</p>
+                </div>
+                <div class="impacto-item glass">
+                    <div class="impacto-icon">⚡🔋</div>
+                    <h4>Eficiência Energética</h4>
+                    <p>A <strong>Informática Básica</strong> ensina a configurar o consumo de energia do PC, enquanto a <strong>Nuvem</strong> reduz a necessidade de servidores locais ligados 24h.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container" id="cursos">
+        <div class="section-title">
+            <h2>Nossos Cursos Gratuitos</h2>
+            <p>Conheça os nossos cursos gratuitos que unem o TI com a preservação do nosso planeta</p>
+        </div>
+        <section class="course-grid">
+            <div class="course-card glass">
+                <div class="course-thumb">
+                    <img src="assets/img/excel.jpg" alt="Curso de Excel">
+                </div>
+                <div class="course-info">
+                    <h3>Excel</h3>
+                    <p>Aprenda a criar planilhas inteligentes para controle de recursos, descartes, análises de consumo e muito mais!</p>
+                    <a href="Cursos/excel.html" class="btn">Ver Curso</a>
+                </div>
+            </div>
+            <div class="course-card glass">
+                <div class="course-thumb">
+                    <img src="assets/img/Cloud.webp" alt="Curso de Nuvem">
+                </div>
+                <div class="course-info">
+                    <h3>Cloud/Nuvem</h3>
+                    <p>Aprenda a utilizar a nuvem como ajuda na desmaterialização de escritórios e na economia de energia.</p>
+                    <a href="Cursos/cloud.html" class="btn">Ver Curso</a>
+                </div>
+            </div>
+            <div class="course-card glass">
+                <div class="course-thumb">
+                    <img src="assets/img/computer.avif" alt="Curso de Informática Básica">
+                </div>
+                <div class="course-info">
+                    <h3>Informática Básica</h3>
+                    <p>Manutenção básica e upgrades para prolongar a vida útil do seu PC e reduzir o lixo eletrônico.</p>
+                    <a href="Cursos/TecBasic.html" class="btn">Ver Curso</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Projeto Extensão e Inovação (Engenharias Computação/Civil/Mecânica)</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar - EcoTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+</head>
+<body class="light-theme">
+    <div class="auth-wrapper">
+        <div class="auth-container" id="auth-container">
+            <div class="form-container sign-up-container">
+                <form id="register-form">
+                    <h1>Criar Conta</h1>
+                    <p>Use seu e-mail para registro</p>
+                    <input type="email" id="register-email" placeholder="E-mail" required />
+                    <input type="password" id="register-password" placeholder="Senha" required />
+                    <input type="password" id="register-confirm-password" placeholder="Confirmar Senha" required />
+                    <button type="submit" class="btn-primary w-100">Cadastrar</button>
+                    <div id="register-message" class="message"></div>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form id="login-form">
+                    <h1>Entrar</h1>
+                    <p>Acesse sua conta</p>
+                    <input type="email" id="login-email" placeholder="E-mail" required />
+                    <input type="password" id="login-password" placeholder="Senha" required />
+                    <button type="submit" class="btn-primary w-100">Entrar</button>
+                    <div id="login-message" class="message"></div>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Olá, Ecotecher!</h1>
+                        <p>Para manter-se conectado conosco, faça o login com suas informações pessoais</p>
+                        <button class="btn-secondary" id="signIn">Entrar</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Bem vindo!</h1>
+                        <p>Insira seus dados pessoais e comece sua jornada sustentável conosco</p>
+                        <button class="btn-secondary" id="signUp">Criar Conta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="auth-back">
+            <a href="../homePage.html">← Voltar para a Home</a>
+            <button id="theme-toggle" class="theme-btn">
+                <img src="../assets/img/icons8-modo-escuro-50.png" alt="Tema" id="theme-icon">
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('auth-container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+</body>
+</html>
