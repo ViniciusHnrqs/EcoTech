@@ -162,19 +162,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Troca de aulas
     const aulaItems = document.querySelectorAll('.playlist-sidebar .aula-item');
-    const courseVideo = document.getElementById('course-video');
     const videoTitle = document.getElementById('video-title');
     const videoDescription = document.getElementById('video-description');
     const summaryList = document.getElementById('summary-list');
+    const videoPlayerContainer = document.querySelector('.video-player');
 
-    if (aulaItems.length > 0 && courseVideo && videoTitle && videoDescription && summaryList) {
+    if (aulaItems.length > 0 && videoPlayerContainer && videoTitle && videoDescription && summaryList) {
         const isCloudCourse = document.body.classList.contains('theme-cloud');
         const isTecCourse = document.body.classList.contains('theme-tec');
 
         const catalogoExcel = {
             1: {
                 titulo: "Aula 01 - Introdução ao Excel",
-                videoSrc: "../assets/videos/aula 01 - excel.mp4",
+                videoSrc: "https://www.youtube.com/embed/H1iII84J1GA",
                 descricao: "Nesta aula, exploramos como o uso correto de planilhas pode eliminar o fluxo de papel em escritórios, além de introduzir conceitos básicos de organização de dados.",
                 resumo: [
                     "<strong>Digitalização no excel:</strong> Entenda como substituir arquivos físicos por planilhas inteligentes.",
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             2: {
                 titulo: "Aula 02 - Planilha de Gastos",
-                videoSrc: "../assets/videos/aula 02 - excel .mp4",
+                videoSrc: "https://www.youtube.com/embed/gIcrhE7D3yY",
                 descricao: "Nesta aula, aprendemos a construir uma planilha de controle de gastos, aplicando fórmulas básicas e entendendo o impacto da redução de desperdício nos recursos.",
                 resumo: [
                     "<strong>Fórmulas Básicas:</strong> Aprenda operações matemáticas como Soma, Subtração, Multiplicação e Divisão.",
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             3: {
                 titulo: "Aula 03 - Planilha Completa e Dashboards",
-                videoSrc: "../assets/videos/aula 03 - original excel.mp4",
+                videoSrc: "https://www.youtube.com/embed/n3H5d_iF0tI",
                 descricao: "Nesta aula final do módulo, construímos uma planilha completa com gráficos interativos (Dashboards) para visualização clara de indicadores de sustentabilidade.",
                 resumo: [
                     "<strong>Gráficos Ambientais:</strong> Como criar representações visuais impactantes de dados de consumo.",
@@ -208,17 +208,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const catalogoCloud = {
             1: {
                 titulo: "Aula 01 - O que é Nuvem?",
-                videoSrc: "../assets/videos/aula 01 - cloud.mp4",
+                videoSrc: "https://www.youtube.com/embed/1C75EDD1qfA",
                 descricao: "Nesta aula, compreendemos o conceito de nuvem, suas principais vantagens ambientais e a segurança por trás da desmaterialização.",
                 resumo: [
                     "<strong>Conceito de nuvem:</strong> Entenda o que é o armazenamento descentralizado.",
                     "<strong>Vantagens sustentáveis:</strong> Como a nuvem ajuda a diminuir a pegada de carbono.",
-                    "<strong>Segurança de dados:</strong> Mitos e verdades sobre a segurança da nuvem."
+                    "<strong>Segurança de dados:</strong> Mitos e verdade sobre a segurança da nuvem."
                 ]
             },
             2: {
                 titulo: "Aula 02 - Ferramentas",
-                videoSrc: "../assets/videos/aula 02 - cloud.mp4",
+                videoSrc: "https://www.youtube.com/embed/K7qgIek5P98",
                 descricao: "Nesta aula, conhecemos as principais ferramentas do mercado (Google Drive e OneDrive) e como o compartilhamento e colaboração em tempo real reduzem perdas.",
                 resumo: [
                     "<strong>Google Drive e OneDrive:</strong> Primeiros passos e configurações recomendadas.",
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             3: {
                 titulo: "Aula 03 - Organização",
-                videoSrc: "../assets/videos/aula 03 - cloud.mp4",
+                videoSrc: "https://www.youtube.com/embed/l592k-G4sX4",
                 descricao: "Na última aula, aprendemos a organizar pastas inteligentes na nuvem, garantindo produtividade e sustentabilidade ao extinguir papéis físicos.",
                 resumo: [
                     "<strong>Pastas inteligentes:</strong> Criação de fluxos de trabalho desmaterializados.",
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const catalogoTec = {
             1: {
                 titulo: "Aula 01 - Hardware Básico",
-                videoSrc: "../assets/videos/aula 01 tec basica.mp4",
+                videoSrc: "https://www.youtube.com/embed/3c7bNguY978",
                 descricao: "Conheça as peças essenciais do computador, o ciclo de vida do hardware e as práticas para evitar a poluição tecnológica através da redução de lixo eletrônico (e-waste).",
                 resumo: [
                     "<strong>Peças do computador:</strong> Conheça os componentes essenciais e o funcionamento básico do PC.",
@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             2: {
                 titulo: "Aula 02 - Manutenção e Upgrades",
-                videoSrc: "../assets/videos/aula 02 tec basica.mp4",
+                videoSrc: "https://www.youtube.com/embed/sN4_qfR_P2U",
                 descricao: "Descubra como a manutenção preventiva física e a realização de upgrades estratégicos de SSD e memória RAM estendem a vida útil das máquinas, combatendo o desperdício.",
                 resumo: [
                     "<strong>Manutenção Preventiva:</strong> Limpeza física interna para evitar superaquecimento e queima de peças.",
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             3: {
                 titulo: "Aula 03 - Otimização de Software e Energia",
-                videoSrc: "../assets/videos/Aula 03 tec basica.mp4",
+                videoSrc: "https://www.youtube.com/embed/tC-4D2dK2eQ",
                 descricao: "Aprenda a otimizar o sistema operacional, configurar planos de energia eficientes e adotar um uso consciente dos recursos para prolongar o hardware e poupar energia elétrica.",
                 resumo: [
                     "<strong>Otimização de Software:</strong> Limpeza de arquivos temporários e programas em segundo plano para ganho de desempenho.",
@@ -272,6 +272,43 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const catalogoAulas = isTecCourse ? catalogoTec : (isCloudCourse ? catalogoCloud : catalogoExcel);
+
+        const atualizarPlayerVideo = (videoSrc) => {
+            if (!videoSrc) {
+                videoPlayerContainer.innerHTML = `<div style="display:flex; align-items:center; justify-content:center; height:100%; color:var(--text-muted);">Vídeo não disponível</div>`;
+                return;
+            }
+
+            // Se for link do YouTube (padrão, share link ou embed)
+            if (videoSrc.includes('youtube.com') || videoSrc.includes('youtu.be') || videoSrc.includes('embed')) {
+                let embedUrl = videoSrc;
+                if (!embedUrl.includes('/embed/')) {
+                    let videoId = '';
+                    if (embedUrl.includes('youtu.be/')) {
+                        videoId = embedUrl.split('youtu.be/')[1].split(/[?#]/)[0];
+                    } else if (embedUrl.includes('v=')) {
+                        videoId = embedUrl.split('v=')[1].split('&')[0];
+                    }
+                    embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                }
+                videoPlayerContainer.innerHTML = `<iframe src="${embedUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:100%; height:100%; min-height:360px; border-radius:8px;"></iframe>`;
+            } else if (videoSrc.endsWith('.mp4')) {
+                // Se for arquivo local .mp4
+                videoPlayerContainer.innerHTML = `<video id="course-video" controls style="width:100%; height:100%; border-radius:8px;"><source id="video-source" src="${videoSrc}" type="video/mp4"></video>`;
+                const courseVideo = document.getElementById('course-video');
+                if (courseVideo) {
+                    courseVideo.load();
+                    courseVideo.play().catch(() => console.log("Play automático suspenso pelo navegador."));
+                }
+            } else {
+                videoPlayerContainer.innerHTML = `<div style="display:flex; align-items:center; justify-content:center; height:100%; color:var(--text-muted);">Formato de vídeo não suportado</div>`;
+            }
+        };
+
+        // Carrega o primeiro vídeo ao iniciar a página
+        if (catalogoAulas[1]) {
+            atualizarPlayerVideo(catalogoAulas[1].videoSrc);
+        }
 
         aulaItems.forEach(item => {
             item.addEventListener('click', () => {
@@ -294,17 +331,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     videoTitle.textContent = aulaData.titulo;
                     videoDescription.textContent = aulaData.descricao;
 
-                    // Atualiza fonte do vídeo
-                    if (aulaData.videoSrc && aulaData.videoSrc.endsWith('.mp4')) {
-                        courseVideo.src = aulaData.videoSrc;
-                        courseVideo.load();
-                        courseVideo.play().catch(() => console.log("Play suspenso pelo navegador."));
-                    } else {
-                        courseVideo.src = "";
-                        console.log("Vídeo em formato não suportado ou em desenvolvimento.");
-                    }
+                    // Atualiza o player de vídeo
+                    atualizarPlayerVideo(aulaData.videoSrc);
 
-                    // Atualiza a lista 
+                    // Atualiza a lista de resumos
                     summaryList.innerHTML = aulaData.resumo.map(itemText => `
                         <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
                             <span>✔</span> <div>${itemText}</div>
