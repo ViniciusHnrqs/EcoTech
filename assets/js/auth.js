@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 msgBox.innerText = 'Login realizado com sucesso!';
                 msgBox.classList.add('success');
-                setTimeout(() => window.location.href = '../homePage.html', 1000);
+                setTimeout(() => window.location.href = '../index.html', 1000);
             }
         });
     }
