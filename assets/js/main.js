@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const catalogoExcel = {
             1: {
                 titulo: "Aula 01 - Introdução ao Excel",
-                videoSrc: "https://www.youtube.com/embed/H1iII84J1GA",
+                videoSrc: "https://www.youtube.com/embed/0kHw1aG7Bsk",
                 descricao: "Nesta aula, exploramos como o uso correto de planilhas pode eliminar o fluxo de papel em escritórios, além de introduzir conceitos básicos de organização de dados.",
                 resumo: [
                     "<strong>Digitalização no excel:</strong> Entenda como substituir arquivos físicos por planilhas inteligentes.",
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             2: {
                 titulo: "Aula 02 - Planilha de Gastos",
-                videoSrc: "https://www.youtube.com/embed/gIcrhE7D3yY",
+                videoSrc: "https://www.youtube.com/embed/qT_VzWryeX0",
                 descricao: "Nesta aula, aprendemos a construir uma planilha de controle de gastos, aplicando fórmulas básicas e entendendo o impacto da redução de desperdício nos recursos.",
                 resumo: [
                     "<strong>Fórmulas Básicas:</strong> Aprenda operações matemáticas como Soma, Subtração, Multiplicação e Divisão.",
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             3: {
                 titulo: "Aula 03 - Planilha Completa e Dashboards",
-                videoSrc: "https://www.youtube.com/embed/n3H5d_iF0tI",
+                videoSrc: "https://www.youtube.com/embed/684o1w_c_Q8",
                 descricao: "Nesta aula final do módulo, construímos uma planilha completa com gráficos interativos (Dashboards) para visualização clara de indicadores de sustentabilidade.",
                 resumo: [
                     "<strong>Gráficos Ambientais:</strong> Como criar representações visuais impactantes de dados de consumo.",
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const catalogoCloud = {
             1: {
                 titulo: "Aula 01 - O que é Nuvem?",
-                videoSrc: "https://www.youtube.com/embed/1C75EDD1qfA",
+                videoSrc: "https://www.youtube.com/embed/EN4fPBz0TDI",
                 descricao: "Nesta aula, compreendemos o conceito de nuvem, suas principais vantagens ambientais e a segurança por trás da desmaterialização.",
                 resumo: [
                     "<strong>Conceito de nuvem:</strong> Entenda o que é o armazenamento descentralizado.",
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             2: {
                 titulo: "Aula 02 - Ferramentas",
-                videoSrc: "https://www.youtube.com/embed/K7qgIek5P98",
+                videoSrc: "https://www.youtube.com/embed/7uKj7C4HwP0",
                 descricao: "Nesta aula, conhecemos as principais ferramentas do mercado (Google Drive e OneDrive) e como o compartilhamento e colaboração em tempo real reduzem perdas.",
                 resumo: [
                     "<strong>Google Drive e OneDrive:</strong> Primeiros passos e configurações recomendadas.",
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             3: {
                 titulo: "Aula 03 - Organização",
-                videoSrc: "https://www.youtube.com/embed/l592k-G4sX4",
+                videoSrc: "https://www.youtube.com/embed/d2aC7W0tq8Y",
                 descricao: "Na última aula, aprendemos a organizar pastas inteligentes na nuvem, garantindo produtividade e sustentabilidade ao extinguir papéis físicos.",
                 resumo: [
                     "<strong>Pastas inteligentes:</strong> Criação de fluxos de trabalho desmaterializados.",
@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             2: {
                 titulo: "Aula 02 - Manutenção e Upgrades",
-                videoSrc: "https://www.youtube.com/embed/sN4_qfR_P2U",
+                videoSrc: "https://www.youtube.com/embed/l4j7Pex0T1w",
                 descricao: "Descubra como a manutenção preventiva física e a realização de upgrades estratégicos de SSD e memória RAM estendem a vida útil das máquinas, combatendo o desperdício.",
                 resumo: [
                     "<strong>Manutenção Preventiva:</strong> Limpeza física interna para evitar superaquecimento e queima de peças.",
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             3: {
                 titulo: "Aula 03 - Otimização de Software e Energia",
-                videoSrc: "https://www.youtube.com/embed/tC-4D2dK2eQ",
+                videoSrc: "https://www.youtube.com/embed/sN4_qfR_P2U",
                 descricao: "Aprenda a otimizar o sistema operacional, configurar planos de energia eficientes e adotar um uso consciente dos recursos para prolongar o hardware e poupar energia elétrica.",
                 resumo: [
                     "<strong>Otimização de Software:</strong> Limpeza de arquivos temporários e programas em segundo plano para ganho de desempenho.",
